@@ -1,0 +1,37 @@
+#include <stdio.h>
+int add(int,int);
+int add(int a,int b){
+    printf(" the sum is %d",a+b);
+}
+void main()
+{
+    int a,b;
+    printf("enter nums");
+    scanf("%d%d",&a,&b);
+    add(a,b);
+}# include<stdio.h>
+int  bala(int);
+int bala(int a)
+{
+    int tot;
+    while(a>0){
+        tot=tot+a%10;
+        a=a/10;
+    }
+    return tot;
+}
+void main()
+{
+    int a;
+    int sum=0;
+    while(1){
+
+printf(" enter the sum");
+scanf("%d",&a);
+if(a==0)
+break;
+else
+sum=sum+bala(a);
+}
+}
+pir
